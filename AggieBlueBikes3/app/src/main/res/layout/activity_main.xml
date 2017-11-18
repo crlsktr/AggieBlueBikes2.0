@@ -9,7 +9,7 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="300"
+        android:layout_width="300dp"
         android:layout_height="500dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -19,4 +19,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/bluebikeslogo" />
+
+
 </android.support.constraint.ConstraintLayout>
