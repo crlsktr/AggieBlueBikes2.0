@@ -7,4 +7,6 @@
     <string name="checkout_confirmation">Thanks for checking out a bike!</string>
     <string name="checkout_save">Save checkout!</string>
     <string name="checkout_menu_text">Checkouts</string>
+    <string name="title_activity_bike_resource_map">Bike stuff on campus</string>
+    <string name="bikeResource_menu_text">Bike Resource Map</string>
 </resources>

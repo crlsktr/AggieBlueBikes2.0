@@ -40,9 +40,18 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             case R.id.ABB_menuItem_checkout:
                 OpenCheckout();
+                return true;
+            case R.id.ABB_menuItem_resourceMap:
+                OpenResourceMap();
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    private void OpenResourceMap() {
+        Intent intent = new Intent(this, BikeResourceMap.class);
+        startActivity(intent);
     }
 
     private void OpenCheckout() {
