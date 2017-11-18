@@ -63,7 +63,14 @@ public class BikeResourceMap extends FragmentActivity implements OnMapReadyCallb
     }
 
     /**
-     * Adds the markers for locations to park bikes on campus
+     * Adds markers for locations to park bikes and repair stations on campus. All locations are
+     * stored in the resourceMap.xml file located in the res/values directory. Additional locations
+     * may be added by following the format:
+     *
+     * <item>"(Double) Latitude","(Double) Longitude","(String) Title","(String) Description"</item>
+     *
+     * The description must contain the words "Tools" or "Services" for a wrench to be displayed as
+     * the marker icon. Otherwise a bike will be displayed, representing bike parking.
      */
     private void addMarkers() {
         String[] locations = getResources().getStringArray(R.array.locations);
@@ -78,6 +85,11 @@ public class BikeResourceMap extends FragmentActivity implements OnMapReadyCallb
         }
     }
 
+    /**
+     * Determines which icon to attach to the map marker. Returns a BitMap Descriptor.
+     * @param type snippet from marker describing the location
+     * @return a bitmap graphic corresponding to the location type
+     */
     private BitmapDescriptor getIcon(String type) {
         if (type.contains("Tools") || type.contains("Services")) {
             return BitmapDescriptorFactory.fromResource(R.drawable.repair_station);
