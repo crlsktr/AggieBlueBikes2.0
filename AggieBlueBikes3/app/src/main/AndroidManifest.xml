@@ -16,6 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
+        <activity android:name=".ABBFeedActivity">
 
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>
