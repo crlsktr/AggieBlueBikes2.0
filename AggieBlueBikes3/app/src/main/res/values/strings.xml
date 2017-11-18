@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Aggie Blue Bikes</string>
     <string name="app_namelogo">Some logos</string>
+    <string name="feed_menu_button">Aggie Blue Bikes Feed</string>
+    <string name="help_menu_button">Help/About</string>
+    <string name="checkout_text">When did your checkout start?</string>
+    <string name="checkout_confirmation">Thanks for checking out a bike!</string>
+    <string name="checkout_save">Save checkout!</string>
+    <string name="checkout_menu_text">Checkouts</string>
 </resources>

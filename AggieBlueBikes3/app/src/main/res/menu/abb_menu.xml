@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/ABB_menuItem_feed"
+        android:icon="@drawable/rss"
+        android:title="@string/feed_menu_button"
+         />
+    <item android:id="@+id/ABB_menuItem_help"
+        android:icon="@drawable/help"
+        android:title="@string/help_menu_button" />
+
+    <item android:id="@+id/ABB_menuItem_checkout"
+        android:icon="@drawable/calendar_icon"
+        android:title="@string/checkout_menu_text"/>
+</menu>
